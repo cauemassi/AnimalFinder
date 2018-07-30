@@ -3,7 +3,8 @@ import csv
 
 class db():
 	def __init__(self):
-		self.conn = sqlite3.connect("C:\\Users\\Caue\\Documents\\Workshop Python\\Projeto\\db\\animals.db")
+		#self.conn = sqlite3.connect("C:\\Users\\Caue\\Documents\\Workshop Python\\Projeto\\db\\animals.db")
+		self.conn = sqlite3.connect("C:\\Workshop Python\\AnimalFinder\\db\\animals.db")
 		self.cursor = self.conn.cursor()		
 
 	def createAnimalsTable(self):

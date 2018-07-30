@@ -16,7 +16,7 @@ def csv2Tuple(path):
 	return tup
 
 def main():
-	tup = csv2Tuple("C:\\Users\\Caue\\Documents\\Workshop Python\\Projeto\\docs\\zoo.data")
+	tup = csv2Tuple("C:\\Workshop Python\\AnimalFinder\\docs\\zoo.data")
 	data_base = db.db()
 	data_base.createAnimalsTable()
 	data_base.insertData(tup)
