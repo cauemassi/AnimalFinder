@@ -1,4 +1,6 @@
+from lib import db
 import csv
+
 
 def csv2Tuple(path):
 	file = csv.reader(open(path), delimiter= ',')
@@ -13,5 +15,12 @@ def csv2Tuple(path):
 		tup += [aux]
 	return tup
 
-print(csv2Tuple("C:\\Users\\Caue\\Documents\\Workshop Python\\Projeto\\docs\\zoo.data"))	
+def main():
+	tup = csv2Tuple("C:\\Users\\Caue\\Documents\\Workshop Python\\Projeto\\docs\\zoo.data")
+	data_base = db.db()
+	data_base.createAnimalsTable()
+	data_base.insertData(tup)
+
+main()
+
 
