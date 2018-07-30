@@ -1,0 +1,6 @@
+- Criar projeto github
+- Instalar o python3
+- Instalar Scikit Learn
+- Instalar NumPy
+- Instalar SciPy
+- 
