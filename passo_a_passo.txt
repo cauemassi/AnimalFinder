@@ -1,6 +1,7 @@
 - Criar projeto github
-- Instalar o python3
+- Instalar o python3 (3.7.0)
 - Instalar Scikit Learn
 - Instalar NumPy
 - Instalar SciPy
-- 
+- Alterar a linha 19 do arquivo init_db.py para apontar para o arquivo localizado em docs\zoo.data
+- Alterar a linha 6 do arquivo db.py para apontar para o arquivo localizado em db\animals.db
